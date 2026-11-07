@@ -13,21 +13,17 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 # ========================================
 # CONFIGURAÇÕES DO SISTEMA
 # ========================================
-CONFIG = {
-"BANCO_DADOS": "/home/RavenSecurityBuilds/rsb_threat.db",
-    "PORTA_WEB": 8000,
+"BANCO_DADOS": "/tmp/rsb_threat.db",  # ✅ caminho com permissão
+    "PORTA_WEB": 8080,
     "LIMITE_TENTATIVAS": 5,
     "JANELA_TEMPO_SEG": 600,
-    "TEMPO_BLOQUEIO_SEG": 3600,
-    "LIMITE_BLOQUEIOS_PERMANENTE": 3,
-    "SENHA_PAINEL": "HappyNation",
-    "EMAIL_ATIVO": True,
+    "SENHA_PAINEL": "admin123",
+    "EMAIL_ATIVO": False,
     "EMAIL_SERVIDOR": "smtp.gmail.com",
     "EMAIL_PORTA": 587,
-    "EMAIL_REMETENTE": "felipeparreiralbarbosa@gmail.com",
-    "EMAIL_SENHA_APP": "mspaolieayqxfynt",
-    "EMAIL_DESTINATARIO": "felipeparreiralbarbosa@gmail.com",
-}
+    "EMAIL_REMETENTE": "seuemail@gmail.com",
+    "EMAIL_SENHA_APP": "",
+    "EMAIL_DESTINATARIO": "destinatario@exemplo.com"
 
 PADROES_SUSPEITOS = [
     r"(\b(union|select|insert|delete|update|alter|drop)\b.*from)",
