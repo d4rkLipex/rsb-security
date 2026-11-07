@@ -13,7 +13,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 # ========================================
 # CONFIGURAÇÕES DO SISTEMA
 # ========================================
-"BANCO_DADOS": "/tmp/rsb_threat.db",  # ✅ caminho com permissão
+# Caminho com permissão de escrita no Render
+"BANCO_DADOS": "/tmp/rsb_threat.db",
     "PORTA_WEB": 8080,
     "LIMITE_TENTATIVAS": 5,
     "JANELA_TEMPO_SEG": 600,
